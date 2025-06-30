@@ -6,7 +6,7 @@
 
 NewsInfo::NewsInfo(QObject *parent) : QObject(parent),
     manager(new QNetworkAccessManager(this)),
-    apiKey("fe7015486ed242da82728b67642561a9") // newsapi.org anahtarını buraya yaz
+    apiKey("add your key here") // api key
 {
     connect(manager, &QNetworkAccessManager::finished, this, &NewsInfo::onNetworkReply);
 }
