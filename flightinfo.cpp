@@ -6,7 +6,7 @@
 
 FlightInfo::FlightInfo(QObject *parent) : QObject(parent),
     manager(new QNetworkAccessManager(this)),
-    apiKey("6de632bc3d869e294e65b5e1c10e732c") // Aviationstack API anahtarını buraya yaz
+    apiKey("add your key here") // api key
 {
     connect(manager, &QNetworkAccessManager::finished, this, &FlightInfo::onNetworkReply);
 }
