@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RDR4 Info App</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="cityComboBox">
+      <item>
+       <property name="text">
+        <string>İstanbul</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Londra</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New York</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tokyo</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="btnFlightInfo">
+        <property name="text">
+         <string>Uçuş Bilgileri</string>
+        </property>
+        <property name="styleSheet">
+         <string>background-color:#3498db; color:white; font-weight:bold; border-radius:8px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnWeather">
+        <property name="text">
+         <string>Hava Durumu</string>
+        </property>
+        <property name="styleSheet">
+         <string>background-color:#2ecc71; color:white; font-weight:bold; border-radius:8px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCurrency">
+        <property name="text">
+         <string>Döviz</string>
+        </property>
+        <property name="styleSheet">
+         <string>background-color:#e67e22; color:white; font-weight:bold; border-radius:8px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnNews">
+        <property name="text">
+         <string>Haberler</string>
+        </property>
+        <property name="styleSheet">
+         <string>background-color:#9b59b6; color:white; font-weight:bold; border-radius:8px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <!-- Flight Info Page -->
+      <widget class="QWidget" name="pageFlight">
+       <layout class="QVBoxLayout" name="flightLayout">
+        <item>
+         <widget class="QTextEdit" name="textFlightInfo">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color:#ecf0f1; color:#2c3e50; font-size:12pt; border-radius:8px; padding:6px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <!-- Weather Page -->
+      <widget class="QWidget" name="pageWeather">
+       <layout class="QVBoxLayout" name="weatherLayout">
+        <item>
+         <widget class="QTextEdit" name="textWeatherInfo">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color:#ecf0f1; color:#27ae60; font-size:12pt; border-radius:8px; padding:6px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <!-- Currency Page -->
+      <widget class="QWidget" name="pageCurrency">
+       <layout class="QVBoxLayout" name="currencyLayout">
+        <item>
+         <widget class="QTextEdit" name="textCurrencyInfo">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color:#ecf0f1; color:#d35400; font-size:12pt; border-radius:8px; padding:6px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <!-- News Page -->
+      <widget class="QWidget" name="pageNews">
+       <layout class="QVBoxLayout" name="newsLayout">
+        <item>
+         <widget class="QTextEdit" name="textNewsInfo">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color:#ecf0f1; color:#8e44ad; font-size:12pt; border-radius:8px; padding:6px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
